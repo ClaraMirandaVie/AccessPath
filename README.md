@@ -1,16 +1,57 @@
-# React + Vite
+## 🌐 AccessPath
+Aplicação web desenvolvida para o Trabalho de Conclusão de Curso com foco em acessibilidade urbana e mobilidade inclusiva. O AccessPath permite que usuários e administradores mapeiem, avaliem e comentem locais acessíveis, utilizando um mapa interativo baseado no OpenStreetMap.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tecnologias utilizadas
+Frontend:
+React (Vite)
+Axios
+React Router DOM
+React Leaflet + Leaflet
+CSS tradicional (com modo escuro )
 
-Currently, two official plugins are available:
+Backend:
+Node.js + Express
+MySQL
+CORS
+(opcional) Nodemon para ambiente de desenvolvimento
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚙️ Como executar o projeto localmente
+Observação: a pasta node_modules não está incluída no repositório. Após clonar o projeto, é necessário instalar as dependências localmente.
 
-## React Compiler
+🖥️ 1. Clonar o repositório
+git clone https://github.com/teu-usuario/accesspath.git
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📂 2. Entrar na pasta do projeto
+cd accesspath
 
-## Expanding the ESLint configuration
+🔹 Backend
+Entrar na pasta do backend:
+cd backend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Instalar as dependências:
+npm install
+
+Configurar o banco de dados MySQL:
+
+Criar um banco chamado accesspath.
+
+Executar o script SQL disponível em backend/database.sql (se incluído).
+
+Iniciar o servidor backend:
+npm start
+
+O servidor iniciará na porta padrão 8800. Opcionalmente, para reinício automático durante o desenvolvimento:
+npx nodemon index.js
+
+🔹 Frontend
+
+Em outra janela do terminal, entrar na pasta do frontend:
+cd ../frontend
+
+Instalar as dependências:
+npm install
+
+Iniciar o ambiente de desenvolvimento:
+npm run dev
+
+Abrir no navegador o link mostrado (geralmente: http://localhost:5173/)
