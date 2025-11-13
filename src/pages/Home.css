@@ -1,0 +1,13 @@
+.home .hero {
+  padding: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: white;
+  text-align: left;
+}
+.grid-cards { display:flex; gap:18px; margin-top:12px; flex-wrap:wrap; }
+.grid-cards .card { flex:1 1 300px; min-width:220px; padding:18px; }
+
+.small{
+  color: aliceblue;
+}

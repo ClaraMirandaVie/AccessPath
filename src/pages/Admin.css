@@ -1,0 +1,17 @@
+.admin-container {
+  padding: 2rem;
+  animation: fadeUp 0.6s ease;
+}
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 1rem auto 3rem;
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+textarea { resize: none; height: 80px; margin-top: 0.4rem; }
+.place-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+.place-card { width: 300px; padding: 1rem; border-radius: 12px; }

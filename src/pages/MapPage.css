@@ -1,0 +1,36 @@
+.map-page h2 { margin-bottom:10px; }
+.map-layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 18px;
+  align-items: start;
+}
+
+/* On small screens: stack */
+@media (max-width: 900px) {
+  .map-layout { grid-template-columns: 1fr; }
+  .feed-box { order: 2; }
+}
+
+.map-box { padding: 12px; }
+.feed-box { padding: 8px; max-height: 70vh; overflow-y: auto; }
+
+.feed { display:flex; flex-direction:column; gap:18px; }
+
+/* Post layout (same classes used earlier) */
+.place-post { padding: 16px; border-radius: 12px; }
+.post-header { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+.post-header .avatar { font-size:2rem; width:48px; height:48px; display:flex; align-items:center; justify-content:center; border-radius:10px; background:var(--glass); }
+.post-body p { margin: 8px 0 6px; }
+.tag { display:inline-block; margin-top:6px; padding:6px 8px; border-radius:8px; background:linear-gradient(90deg, rgba(75,91,138,0.08), rgba(107,119,184,0.06)); color:var(--muted); }
+
+/* comments */
+.post-comments { margin-top:12px; border-top:1px dashed rgba(0,0,0,0.05); padding-top:12px; }
+.comment-row { display:flex; gap:10px; margin-bottom:10px; align-items:flex-start; }
+.avatar-small { width:36px; height:36px; border-radius:8px; display:flex; align-items:center; justify-content:center; background:var(--glass); }
+.comment-author { font-weight:600; margin-bottom:4px; }
+.comment-text { margin-bottom:4px; }
+.comment-meta { color:var(--muted) }
+
+/* comment form */
+.comment-form { margin-top:8px; display:flex; flex-direction:column; gap:8px; }
